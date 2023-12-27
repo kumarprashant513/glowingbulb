@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    background: black;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.on {
+    border: 12px solid black;
+    position: absolute;
+    background-image: url(img/glowing-bulb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 30rem;
+    margin-top: 20rem;
+    margin-right: -1.5rem;
+}
+
+.off {
+
+    position: relative;
+    background-image: url(img/off-bulb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 30rem;
+    margin-top: 20rem;
+    border: 12px solid black;
+    animation: glow 5s;
+    animation-iteration-count: infinite;
+    opacity: .6;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .on {
+        background-size: 15rem;
+        margin-bottom: 20rem;
+        margin-left: -.9rem;
+    }
+
+    .off {
+        background-size: 14rem;
+        margin-bottom: 20rem;
+
+    }
+}
